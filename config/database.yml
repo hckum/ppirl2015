@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: ppirl_production
-  username: ppirl
+  username: prannay
   password: <%= ENV['PPIRL_DATABASE_PASSWORD'] %>
