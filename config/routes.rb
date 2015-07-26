@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
-  root 'static_pages#home'
+  resources :dbases do
+    collection { post :upload }
+  end
+
+  root 'dbases#index'
+
+  #root 'static_pages#home'
   get 'static_pages/help'
   get 'static_pages/about'
 
