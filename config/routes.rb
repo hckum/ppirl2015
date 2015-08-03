@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   end
 
   root 'dbases#index'
-
+  get  'view' => 'dbases#view'
+  # post 'dbases/upload'
   #root 'static_pages#home'
   get 'static_pages/help'
   get 'static_pages/about'
